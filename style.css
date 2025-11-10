@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.kontrole-prikaza {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1000;
+}
+
+.kontrole-prikaza button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background-color: #494949;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.kontrole-prikaza button:hover {
+    background-color: #d4a017;
+    color: black;
+}
+
+.gornji-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 15px 80px;
+}
+
+.gornji-banner .logo img {
+    height: 50px;
+}
+
+.gornji-banner .navigacija a,
+.gornji-banner .kontakt a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.gornji-banner .navigacija a:hover,
+.gornji-banner .kontakt a:hover {
+    color: #d4a017;
+}
+
+.slika-banner {
+    position: relative;
+    height: 191px;
+    background: url("baner.jpg") center/cover no-repeat;
+}
+
+.slika-banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.tekst-preko-slike {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.veliki-tekst {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.manji-tekst {
+    font-size: 16px;
+    margin: 0 5px;
+    color: #e0e0e0;
+}
+
+.html-forma {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.html-forma h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.html-forma form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.html-forma label {
+    align-self: flex-start;
+    margin: 8px 0 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+.html-forma select,
+.html-forma input,
+.html-forma textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.kvadratura-grupa {
+    display: flex;
+    align-items: center;
+}
+
+.kvadratura-grupa span {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.html-forma button {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.html-forma button:hover {
+    background-color: #d4a017;
+}
+
+/* footer */
+.footer {
+    background-color: #0a0a0a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+}
+
+.footer .levi-div {
+    margin-left: 100px;
+}
+
+.footer .srednji-div,
+.footer .desni-div {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.srednji-div,
+.srednji-div a,
+.srednji-div .naziv-sekcije {
+    color: #ffe263;
+}
+
+.srednji-div {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #3d251d;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    gap: 200px;
+    border-radius: 12px;
+}
+
+.footer .logo-dva img {
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 8px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer .navigacija-dva .naziv-sekcije {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fffbd2;
+    font-size: 15px;
+}
+
+.info span {
+  margin-right: 15px;
+}
+
+.info img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer .navigacija-dva a {
+    color: #fffbd2;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer .navigacija-dva a:hover {
+    color: #d4a017;
+}
+
+.footer .desni-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 25px;
+    margin-left: 300px;
+    gap: 20px;
+}
+
+.footer .desni-div .naziv-sekcije {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .desni-div img {
+    height: 28px;
+    margin: 5px;
+}
+
+.footer .desni-div h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.footer .desni-div p {
+    font-size: 12px;
+    color: #ccc;
+    max-width: 220px;
+}
+
+.social-mreze {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-desni-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.tekst-desni-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* responzivnost za mobilne uredjaje*/
+@media screen and (max-width: 768px) {
+
+    .gornji-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navigacija {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navigacija a {
+        margin: 5px 10px;
+        font-size: 15px;
+    }
+
+    .kontakt {
+        margin-top: 8px;
+    }
+
+    .slika-banner {
+        height: 200px;
+    }
+
+    .veliki-tekst {
+        font-size: 28px;
+    }
+
+    .html-forma {
+        padding: 20px;
+    }
+
+    .html-forma form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .srednji-div {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .levi-div,
+    .footer .desni-div {
+        min-width: auto;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolokvijum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="kontrole-prikaza">
+            <button id="fontPlus">A</button>
+            <button id="fontMinus">a</button>
+            <button id="temaSvetla">☀️</button>
+            <button id="temaTamna">🌙</button>
+        </div>
+
+    <div class="gornji-banner">
+        <div class="logo">
+            <img src="slike/ikat-nekretnine-logo.png" alt="">
+        </div>
+
+        <div class="navigacija">
+            <a href="">O nama</a>
+            <a href="">Potraznja</a>
+            <a href="">Prodaja</a>
+            <a href="">Izdavanje</a>
+        </div>
+
+        <div class="kontakt">
+            <a href="">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="slika-banner">
+        <img src="slike/slika-pozadine2.png" alt="">
+        <div class="tekst-preko-slike">
+            <div>
+                <span class="veliki-tekst">Izdavanje</span>
+            </div>
+            <div>
+                <span class="manji-tekst">Pocetna</span>
+                <span class="manji-tekst">›</span>
+                <span class="manji-tekst">Tip nekretnine</span>
+                <span class="manji-tekst">›</span>
+                <span class="manji-tekst">Izdavanje</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="html-forma">
+        <h2>PRIJAVI NOVU NEKRETNINU</h2>
+        <form action="#" method="post">
+
+        <label for="tip">Tip nekretnine:</label>
+        <select id="tip" name="tip" required>
+        <option value="">-- Izaberi tip --</option>
+        <option value="stan">Stan</option>
+        <option value="kuca">Kuća</option>
+        <option value="garaza">Garaža</option>
+        </select>
+
+        <label for="grad">Grad:</label>
+        <select id="grad" name="grad" required>
+        <option value="">-- Izaberi grad --</option>
+        <option value="beograd">Beograd</option>
+        <option value="novi-sad">Novi Sad</option>
+        <option value="nis">Niš</option>
+        <option value="kragujevac">Kragujevac</option>
+        <option value="subotica">Subotica</option>
+        </select>
+
+        <label for="kvadratura">Kvadratura:</label>
+        <div class="kvadratura-grupa">
+        <input type="number" id="kvadratura" name="kvadratura" placeholder="Unesite kvadraturu" required>
+        <span>m²</span>
+        </div>
+
+        <label for="opis">Opis:</label>
+        <textarea id="opis" name="opis" rows="4" placeholder="Unesite opis nekretnine..." required></textarea>
+
+        <button type="submit">Posalji prijavu</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="levi-div">
+            <div class="logo-dva">
+                <img src="slike/ikat-nekretnine-logo.png" alt="">
+            </div>
+
+            <div class="info">
+                <div class="info-omotac"><img src="slike/lokacija.png" alt=""><span class="info-tekst">Zvezdara, Ravanicko 19, prvi sprat, 11OOO Beograd</span></div>
+                <div class="info-omotac"><img src="slike/mobilni.png" alt=""><span class="info-tekst">+381 11 670 7565</span></div>
+                <div class="info-omotac"><img src="slike/mail.png" alt=""><span class="info-tekst">nekretnineikat@gmail.com</span></div>
+            </div>
+        </div>
+
+        <div class="srednji-div">
+            <div class="navigacija-dva">
+                <span class="naziv-sekcije">TIP NEKRETNINE</span>
+                <ul>
+                    <li><a href="">Stan</a></li>
+                    <li><a href="">Kuca</a></li>
+                    <li><a href="">Poslovni prostor</a></li>
+                </ul>
+            </div>
+
+            <div class="navigacija-dva">
+                <span class="naziv-sekcije">NAVIGACIJA</span>
+                <ul>
+                    <li><a href="">Pocetna</a></li>
+                    <li><a href="">O nama</a></li>
+                    <li><a href="">Potraznja</a></li>
+                    <li><a href="">Prodaja</a></li>
+                    <li><a href="">Izdavanje</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="desni-div">
+            <div class="social-mreze">
+                <span class="naziv-sekcije">PRATITE NAS</span>
+                <div>
+                    <img src="slike/facebook.png" alt="facebook">
+                    <img src="slike/tiktok.png" alt="tiktok">
+                    <img src="slike/instagram.png" alt="instagram">
+                </div>
+            </div>
+
+            <div class="info-desni-div">
+                <img src="slike/licensed-logo.png" alt="">
+                <div class="tekst-desni-div">
+                    <h3>LICENCIRANI AGENT</h3>
+                    <p>Upisani u Registar posrednika u prometu i zakupu nepotrebnosti Srbija pod r.br.1007</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>
